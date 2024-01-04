@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input form</title>
+    <style>
+      .inp {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+      @media (max-width: 600px) {
+        td {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <table class="inp">
+        <tr>
+          <td><label for="">First Name:</label><br /><input type="text" /></td>
+          <td><label for="">Last Name:</label><br /><input type="text" /></td>
+        </tr>
+        <tr>
+          <td><label for="">Email:</label><br /><input type="email" /></td>
+          <td>
+            <label for="">Contact Number:</label><br /><input type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Username:</label><br /><input type="text" /></td>
+          <td>
+            <label for="">Password:</label><br /><input type="password" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Address:</label><br /><textarea></textarea></td>
+          <td>
+            <label for="">Gender:</label><br />
+            <table>
+              <tr>
+                <td>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="male"
+                  /><label for="male">Male</label>
+                </td>
+                <td>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                  /><label for="female">Female</label>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Qualification:</label><br />
+            <select name="quali" id="quali">
+              <option value="">--Select--</option>
+              <option value="B.Tech">B.Tech</option>
+              <option value="B.Com">B.Com</option>
+              <option value="BCA">BCA</option>
+              <option value="B.Tech">B.Tech</option>
+            </select>
+          </td>
+          <td>
+            <label for="">Experience:</label><br />
+            <select name="quali" id="quali">
+              <option value="">--Select--</option>
+              <option value="1">1</option>
+              <option value="1">1</option>
+              <option value="1">1</option>
+              <option value="1">1</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Coding Language:</label></td>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <input
+                    type="radio"
+                    name="lan"
+                    id="c/c++"
+                    value="c/c++"
+                  /><label for="c/c++">c/c++</label>
+                </td>
+                <td>
+                  <input type="radio" name="lan" id="Java" value="Java" /><label
+                    for="Java"
+                    >Java</label
+                  >
+                </td>
+                <td>
+                  <input type="radio" name="lan" id="C#" value="C#" /><label
+                    for="C#"
+                    >C#</label
+                  >
+                </td>
+                <td>
+                  <input type="radio" name="lan" id="Php" value="Php" /><label
+                    for="Php"
+                    >Php</label
+                  >
+                </td>
+                <td>
+                  <input
+                    type="radio"
+                    name="lan"
+                    id="python"
+                    value="python"
+                  /><label for="python">Python</label>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
